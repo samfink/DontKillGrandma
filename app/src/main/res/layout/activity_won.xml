@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_won"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.games.fink.dontkillgrandma.won">
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginLeft="108dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="17dp"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="casual"
+        android:layout_above="@+id/adView"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gma"
+        android:id="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView7" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adView"
+        ads:adUnitId="@string/admob_id"
+
+        ads:adSize="BANNER"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Grandma survived another day."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
